@@ -1,1 +1,5 @@
-# Official Documentation for the 3xBit APIs
+# Official Documentations - 3xBit
+
+| Application | Description                             | Language 
+|:------------|:----------------------------------------|:------------------------------------
+| Exchange    | Details on the Client Rest API | [EN-US](https://github.com/3xbit/docs/blob/master/exchange/client-rest-api-en_us.md) / [PT-BR](https://github.com/3xbit/docs/blob/master/exchange/client-rest-api-pt_br.md) |
