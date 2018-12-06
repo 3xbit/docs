@@ -1,13 +1,13 @@
-## Client Rest API - 3xBit
+# Client Rest API - 3xBit
 
 
-#### General API Information
+### General API Information
 * The base endpoint is: https://api.exchange.3xbit.com.br
 * All endpoints return either a JSON object or array.
 * For `GET` endpoints, parameters must be sent as a `query string`.
 * For `POST` endpoints, parameters must be sent as a `data`.
 
-#### Authentication
+### Authentication
 
 Authentication must be performed by API Keys.
 * You can create your API Keys in your Account settings on our platform: [https://app.3xbit.com.br/profile/](https://app.3xbit.com.br/profile/)
@@ -15,7 +15,7 @@ Authentication must be performed by API Keys.
 ```
 GET /api/oauth/token/
 ```
-##### Parameters:
+#### Parameters:
 |  Parameter  | Type | Required |  Exemple  |
 |:------------|:-----|:---------|:----------|
 |grant_type   |STRING|     YES  |client_credentials|
@@ -23,7 +23,7 @@ GET /api/oauth/token/
 |client_secret|STRING|     YES  |XDLxXVQCDNkJ9bJZumi0P35c33mucC1XpDrIQp9BHci6JhVL6PKBgoMDW0pP3gkXeZuFXUMmHrRWZXDTMX8oGMmU8ktL0X41aPdXDFP0pP9KK2vfmJ1HVjXYX4vdnJHz|
 
 
-##### Response:
+#### Response:
 ```
 {
   "access_token": "WRNAZedyx8yjocwJIpg9LJUvvBDECO",
@@ -34,7 +34,7 @@ GET /api/oauth/token/
 }
 ```
 
-#### Headers
+### Headers
 
 You should use this Headers for all endpoints:
 
@@ -43,14 +43,14 @@ headers = { "Authorization": "Bearer {access_token}" }
 ```
 
 
-#### Balance
+### Balance
 List the Balance of all Currencies:
 
 ```
 GET /v1/balance/
 ```
 
-##### Response:
+#### Response:
 ```
 [
    {
@@ -86,7 +86,7 @@ List the Balance of a specific Currency:
 GET /v1/balance/btc/
 ```
 
-##### Response:
+#### Response:
 ```
 [
    {
@@ -104,25 +104,25 @@ GET /v1/balance/btc/
 ]
 ```
 
-#### OrderBook
+### OrderBook
 Create Orders
 
 ```
 POST /v1/order/credit/btc/buy/
 ```
-##### Parameters:
+#### Parameters:
 |  Parameter    | Type   | Required | Exemple        |
 |:--------------|:-------|:---------|:---------------|
 |execution_type |STRING  |YES       | LIMIT          |
 |unit_price     |DECIMAL |YES       | 6442.25        |
 |quantity       |DECIMAL |YES       | 0.005000       |
 
-##### Execution Types:
+#### Execution Types:
 * LIMIT
 * MARKET
 
 
-##### Response:
+#### Response:
 ```
 {
    "market": "CREDITBTC",
@@ -144,18 +144,18 @@ List Orders
 ```
 GET /v1/order/credit/btc/sell/
 ```
-##### Parameters:
+#### Parameters:
 |  Parameter | Type   | Required | Exemple   |
 |:-----------|:-------|:---------|:----------|
 |   filter   | STRING | NO       | OPEN      |
 
-##### Filters:
+#### Filters:
 * OPEN
 * DONE
 * 24H
 
 
-##### Response:
+#### Response:
 ```
 [
    {
@@ -193,7 +193,7 @@ List Order by ID
 GET /v1/order/MDNMu9W56A/
 ```
 
-##### Response:
+#### Response:
 ```
 {
    "market": "CREDITBTC",
