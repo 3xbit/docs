@@ -1,13 +1,13 @@
 # Client Rest API - 3xBit
 
 
-### General API Information
+## General API Information
 * The base endpoint is: https://api.exchange.3xbit.com.br
 * All endpoints return either a JSON object or array.
 * For `GET` endpoints, parameters must be sent as a `query string`.
 * For `POST` endpoints, parameters must be sent as a `data`.
 
-### Authentication
+## Authentication
 
 Authentication must be performed by API Keys.
 * You can create your API Keys in your Account settings on our platform: [https://app.3xbit.com.br/profile/](https://app.3xbit.com.br/profile/)
@@ -34,7 +34,7 @@ GET /api/oauth/token/
 }
 ```
 
-### Headers
+## Headers
 
 You should use this Headers for all endpoints:
 
@@ -43,8 +43,8 @@ headers = { "Authorization": "Bearer {access_token}" }
 ```
 
 
-### Balance
-List the Balance of all Currencies:
+## Balance
+### List the Balance of all Currencies:
 
 ```
 GET /v1/balance/
@@ -80,7 +80,7 @@ GET /v1/balance/
 ]
 
 ```
-List the Balance of a specific Currency:
+### List the Balance of a specific Currency:
 
 ```
 GET /v1/balance/btc/
@@ -104,8 +104,8 @@ GET /v1/balance/btc/
 ]
 ```
 
-### OrderBook
-Create Orders
+## OrderBook
+### Create Orders
 
 ```
 POST /v1/order/credit/btc/buy/
@@ -139,7 +139,7 @@ POST /v1/order/credit/btc/buy/
 }
 ```
 
-List Orders
+### List Orders
 
 ```
 GET /v1/order/credit/btc/sell/
@@ -187,7 +187,7 @@ GET /v1/order/credit/btc/sell/
 ]
 ```
 
-List Order by ID
+### List Order by ID
 
 ```
 GET /v1/order/MDNMu9W56A/
@@ -210,7 +210,7 @@ GET /v1/order/MDNMu9W56A/
 }
 ```
 
-Cancel Order by ID
+### Cancel Order by ID
 
 ```
 DELETE /v1/order/MDNMu9W56A/
