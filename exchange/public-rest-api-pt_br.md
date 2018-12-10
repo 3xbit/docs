@@ -67,6 +67,7 @@ GET /v1/history/credit/btc/
 |  Parâmetro    | Tipo   | Obrigatório | Description  | Padrão |
 |:--------------|:-------|:------------|:---------|:-----------|
 | currency_rate | STRING | NÃO         | Valor do dólar convertido pela moeda informada | BRL |
+| page | STRING | NÃO         |  |  |
 
 
 #### Response:
