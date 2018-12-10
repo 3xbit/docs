@@ -6,6 +6,7 @@
 * All endpoints return either a JSON object or array.
 * For `GET` endpoints, parameters must be sent as a `query string`.
 * For `POST` endpoints, parameters must be sent as a `data`.
+* All time and timestamp related fields are in milliseconds.
 
 ## Authentication
 
@@ -134,8 +135,8 @@ POST /v1/order/credit/btc/buy/
    "total": "32.21125000",
    "executed_qty": 0.0,
    "status": "PENDING",
-   "date_joined": "2018-12-05T15:42:11.362810-02:00",
-   "last_update": "2018-12-05T15:42:11.363464-02:00",
+   "timestamp": "1544031731.36281",
+   "last_update": "1544038248.986652",
 }
 ```
 
@@ -168,8 +169,8 @@ GET /v1/order/credit/btc/sell/
       "total": "32.36120000",
       "executed_qty": 0.0,
       "status": "PENDING",
-      "date_joined": "2018-12-05T16:38:18.244112-02:00",
-      "last_update": "2018-12-05T16:38:18.244387-02:00",
+      "timestamp": "1544035098.244112",
+      "last_update": "1544035098.270642",
    },
    {
       "market": "CREDITBTC",
@@ -181,8 +182,8 @@ GET /v1/order/credit/btc/sell/
       "total": "22.39574400",
       "executed_qty": 0.0,
       "status": "CANCELED",
-      "date_joined":" 2018-12-04T12:09:27.949954-02:00",
-      "last_update": "2018-12-04T12:09:30.506978-02:00",
+      "timestamp":" 1543932567.949954",
+      "last_update": "1543944369.218648",
    },
 ]
 ```
@@ -205,8 +206,8 @@ GET /v1/order/MDNMu9W56A/
    "total": "32.21125000",
    "executed_qty": 0.0,
    "status": "PENDING",
-   "date_joined": "2018-12-05T15:42:11.362810-02:00",
-   "last_update": "2018-12-05T15:42:11.363464-02:00",
+   "timestamp": "1544031731.36281",
+   "last_update": "1544038248.986652",
 }
 ```
 
