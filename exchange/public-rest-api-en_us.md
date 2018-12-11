@@ -31,8 +31,7 @@ GET /v1/orderbook/credit/btc/
    "buy_orders":[  
       {  
          "unit_price":"3305.45000000",
-         "quantity":"0.03937500",
-         "total":"130.15209375"
+         "quantity":"0.03937500"
       },
       {  
          "unit_price":"3270.67000000",
