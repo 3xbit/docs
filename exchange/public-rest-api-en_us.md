@@ -36,21 +36,18 @@ GET /v1/orderbook/credit/btc/
       },
       {  
          "unit_price":"3270.67000000",
-         "quantity":"0.00539800",
-         "total":"17.65507666"
+         "quantity":"0.00539800"
       },
       ...
    ],
    "sell_orders":[  
       {  
          "unit_price":"3518.00000000",
-         "quantity":"0.24949100",
-         "total":"877.70933800"
+         "quantity":"0.24949100"
       },
       {  
          "unit_price":"3519.00000000",
-         "quantity":"0.12000000",
-         "total":"422.28000000"
+         "quantity":"0.12000000"
       },
       ...
    ]
@@ -73,37 +70,33 @@ GET /v1/history/credit/btc/
 #### Response:
 ```
 {  
-   "next":"https://api.exchange.3xbit.com.br/v1/history/credit/btc/?page=2",
-   "previous":null,
-   "results":[  
-      {  
-         "order_type":"SELL",
-         "unit_price":"3430.00000000",
-         "quantity":"0.02335600",
-         "market":"CREDITBTC",
-         "total":"80.11108000",
-         "exchange_rate":3.923799,
-         "timestamp":1544471293.029134
-      },
-      {  
-         "order_type":"SELL",
-         "unit_price":"3434.00000000",
-         "quantity":"0.08715200",
-         "market":"CREDITBTC",
-         "total":"299.27996800",
-         "exchange_rate":3.923799,
-         "timestamp":1544471278.390874
-      },
-      {  
-         "order_type":"BUY",
-         "unit_price":"3520.00000000",
-         "quantity":"0.00624400",
-         "market":"CREDITBTC",
-         "total":"21.97888000",
-         "exchange_rate":3.923799,
-         "timestamp":1544457466.117738
-      },
-      ...
-   ]
+   "exchange_rate":3.923799,
+   "market":"CREDITBTC",
+   "history":{  
+      "page":"2",
+      "previous":"https://api.exchange.3xbit.com.b/v1/history/credit/btc/?page=1",
+      "next":"https://api.exchange.3xbit.com.b/v1/history/credit/btc/?page=3",
+      "results":[  
+         {  
+            "order_type":"SELL",
+            "unit_price":"6448.80000000",
+            "quantity":"0.00059300",
+            "timestamp":1542039174.423063
+         },
+         {  
+            "order_type":"SELL",
+            "unit_price":"6448.80000000",
+            "quantity":"0.00518600",
+            "timestamp":1542039170.309675
+         },
+         {  
+            "order_type":"BUY",
+            "unit_price":"6448.10000000",
+            "quantity":"0.00553900",
+            "timestamp":1542038992.761097
+         },
+         ...
+      ]
+   }
 }
 ```
