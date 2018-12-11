@@ -73,8 +73,8 @@ GET /v1/history/credit/btc/
    "market":"CREDITBTC",
    "history":{  
       "page":"2",
-      "previous":"https://api.exchange.3xbit.com.b/v1/history/credit/btc/?page=1",
-      "next":"https://api.exchange.3xbit.com.b/v1/history/credit/btc/?page=3",
+      "previous":"https://api.exchange.3xbit.com.br/v1/history/credit/btc/?page=1",
+      "next":"https://api.exchange.3xbit.com.br/v1/history/credit/btc/?page=3",
       "results":[  
          {  
             "order_type":"SELL",
