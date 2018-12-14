@@ -5,7 +5,7 @@
 * Endpoint base: https://api.exchange.3xbit.com.br
 * Todos os endpoints retornam um objeto JSON ou um Array.
 * Para endpoints `GET`, os parâmetros devem ser enviados por `query string`.
-* Para endpoints `POST`, os parâmetros devem ser enviados por `data`.
+* Para endpoints `POST`, os parâmetros devem ser enviados por `data` ou no corpo da requisição com `application/x-www-form-urlencoded` no `content-type`.
 * Todos os campos relacionados a data e hora estão em milissegundos.
 
 ## Autenticação
