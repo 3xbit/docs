@@ -14,7 +14,7 @@ A autenticação deve ser feita por Chaves de API.
 * Você pode criar suas Chaves de API nas configurações da sua Conta em nossa plataforma: [https://app.3xbit.com.br/profile/](https://app.3xbit.com.br/profile/)
 
 ```
-GET /api/oauth/token/
+POST /api/oauth/token/
 ```
 #### Parâmetros:
 |  Parâmetro  | Tipo | Obrigatório |  Exemplo  |

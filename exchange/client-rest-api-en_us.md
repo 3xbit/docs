@@ -14,7 +14,7 @@ Authentication must be performed by API Keys.
 * You can create your API Keys in your Account settings on our platform: [https://app.3xbit.com.br/profile/](https://app.3xbit.com.br/profile/)
 
 ```
-GET /api/oauth/token/
+POST /api/oauth/token/
 ```
 #### Parameters:
 |  Parameter  | Type | Required |  Exemple  |
