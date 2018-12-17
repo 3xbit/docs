@@ -60,10 +60,12 @@ GET /v1/orderbook/credit/btc/
 GET /v1/history/credit/btc/
 ```
 #### Parameters:
-|  Parameter    | Type   | Required | Descrição  | Default |
+|  Parameter    | Type   | Required | Description  | Default |
 |:--------------|:-------|:------------|:---------|:-----------|
 | currency_rate | STRING | NO         | Dollar value converted by the reported currency | BRL |
 | page | STRING | NO         |  |  |
+| since | TIMESTAMP | NO         | Initial Date |  |
+| until | TIMESTAMP | NO         | End Date |  |
 
 
 #### Response:
