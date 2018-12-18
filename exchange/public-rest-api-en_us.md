@@ -79,22 +79,25 @@ GET /v1/history/credit/btc/
       "next":"https://api.exchange.3xbit.com.br/v1/history/credit/btc/?page=3",
       "results":[  
          {  
-            "order_type":"SELL",
-            "unit_price":"6448.80000000",
-            "quantity":"0.00059300",
-            "timestamp":1542039174.423063
-         },
-         {  
-            "order_type":"SELL",
-            "unit_price":"6448.80000000",
-            "quantity":"0.00518600",
-            "timestamp":1542039170.309675
-         },
-         {  
             "order_type":"BUY",
-            "unit_price":"6448.10000000",
-            "quantity":"0.00553900",
-            "timestamp":1542038992.761097
+            "unit_price":"6529.90000000",
+            "quantity":"0.79152800",
+            "timestamp":1543338577.928904,
+            "transaction_id":"oQD4NfpnKLB"
+         },
+         {  
+            "order_type":"SELL",
+            "unit_price":"6529.70000000",
+            "quantity":"0.00382300",
+            "timestamp":1543338541.962527,
+            "transaction_id":"N0Da0fN2pOj"
+         },
+         {  
+            "order_type":"SELL",
+            "unit_price":"6529.70000000",
+            "quantity":"0.00513500",
+            "timestamp":1543338541.783392,
+            "transaction_id":"Q1DJzfYjwDR"
          },
          ...
       ]
