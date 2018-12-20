@@ -9,6 +9,105 @@
 * All time and timestamp related fields are in milliseconds.
 
 
+## Ticker
+
+### List Ticker
+
+```
+GET /ticker/
+```
+
+#### Response:
+```
+{  
+   "CREDIT_BTC":{  
+      "market":"CREDIT",
+      "symbol":"BTC",
+      "last":"4162.120000000",
+      "open":"3860.000000000",
+      "close":"4162.120000000",
+      "max":"4162.200000000",
+      "min":"3716.080000000",
+      "variation":7.826943005181347,
+      "volume":45.214483,
+      "exchange_rate":"3.848399",
+      "dollar_brl":"3.848399",
+      "bid":"3951.220000000",
+      "ask":"4162.120000000",
+      "market_name":"CREDIT"
+   },
+   "CREDIT_ETH":{  
+      "market":"CREDIT",
+      "symbol":"ETH",
+      "last":"107.700000000",
+      "open":"104.000000000",
+      "close":"107.700000000",
+      "max":"107.700000000",
+      "min":"103.200000000",
+      "variation":3.5576923076923075,
+      "volume":11.054616,
+      "exchange_rate":"3.848399",
+      "dollar_brl":"3.848399",
+      "bid":"105.700000000",
+      "ask":"121.000000000",
+      "market_name":"CREDIT"
+   },
+   ...
+}
+```
+
+### List Ticker converted by currency
+```
+GET /ticker/brl/
+```
+
+#### Example of currencies available:
+* BRL
+* USD
+* EUR
+
+
+
+#### Response:
+```
+{  
+   "CREDIT_BTC":{  
+      "market":"CREDIT",
+      "symbol":"BTC",
+      "last":"16001.68",
+      "open":"14840.54",
+      "close":"16001.68",
+      "max":"16001.99",
+      "min":"14286.84",
+      "variation":7.824149633429186,
+      "volume":45.213126,
+      "exchange_rate":"3.844599",
+      "dollar_brl":"3.844599",
+      "bid":"15341.56",
+      "ask":"16001.68",
+      "market_name":"CREDIT"
+   },
+   "CREDIT_ETH":{  
+      "market":"CREDIT",
+      "symbol":"ETH",
+      "last":"414.06",
+      "open":"399.84",
+      "close":"414.06",
+      "max":"414.06",
+      "min":"396.76",
+      "variation":3.5576923076923075,
+      "volume":11.054616,
+      "exchange_rate":"3.844599",
+      "dollar_brl":"3.844599",
+      "bid":"406.37",
+      "ask":"465.20",
+      "market_name":"CREDIT"
+   },
+   ...
+}
+
+```
+
 
 ## OrderBook
 
