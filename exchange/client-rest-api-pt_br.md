@@ -105,6 +105,136 @@ GET /v1/balance/btc/
 ]
 ```
 
+## Depósitos
+### Listar Depósitos
+```
+GET /v1/deposit/btc/
+```
+#### Parâmetros:
+|  Parâmetro    | Tipo   | Obrigatório |
+|:--------------|:-------|:------------|
+|      status   |STRING  |  Não        |
+
+#### Status:
+* DONE
+* PENDING
+* CANCELED
+
+#### Response:
+```
+[  
+   {  
+      "symbol":"BTC",
+      "hash":"cde9c350f95e3721e05ddeea8824001e60b518094cdc6c1ccdf15896cee4c734",
+      "address":"12DcfknE2JXjW9twBrv6jdk1gYpVJWkPpB",
+      "amount":"0.01000000",
+      "fees":0.0,
+      "total":0.01,
+      "status":"DONE",
+      "timestamp":1532480672.0,
+      "available_at":1532480672.0
+   },
+   {  
+      "symbol":"BTC",
+      "hash":"69ce21f92d346b58092a2c942a4533becd4f81ed923c3e31b6ee1509e980828c",
+      "address":"12DcfknE2JXjW9twBrv6jdk1gYpVJWkPpB",
+      "amount":"0.03291844",
+      "fees":0.0,
+      "total":0.03291844,
+      "status":"DONE",
+      "timestamp":1527271812.402,
+      "available_at":1527272141.0
+   },
+   ...
+]
+```
+
+### Listar Depósito pela Hash
+```
+GET /v1/deposit/btc/69ce21f92d346b58092a2c942a4533becd4f81ed923c3e31b6ee1509e980828c/
+```
+
+#### Response:
+```
+{  
+   "symbol":"BTC",
+   "hash":"69ce21f92d346b58092a2c942a4533becd4f81ed923c3e31b6ee1509e980828c",
+   "address":"12DcfknE2JXjW9twBrv6jdk1gYpVJWkPpB",
+   "amount":"0.03291844",
+   "fees":0.0,
+   "total":0.03291844,
+   "status":"DONE",
+   "timestamp":1527271812.402,
+   "available_at":1527272141.0
+}
+```
+
+## Retiradas
+### Listar Retiradas
+```
+GET /v1/withdraw/btc/
+```
+#### Parâmetros:
+|  Parâmetro    | Tipo   | Obrigatório |
+|:--------------|:-------|:------------|
+|      status   |STRING  |  Não        |
+
+#### Status:
+* DONE
+* PENDING
+* CANCELED
+
+#### Response:
+```
+[  
+   {  
+      "symbol":"BTC",
+      "hash":"63d28c232dff740bfc617d445e70dff93751c76dfa42d11bd27d8399ba2e4a56",
+      "address":"1Ng9kdMPdLsfwKNHBcAq5hqCtUKm6DMLrt",
+      "amount":"0.10040000",
+      "fees":0.0004,
+      "total":0.1,
+      "status":"DONE",
+      "timestamp":1544819138.314,
+      "available_at":1544820335.0
+   },
+   {  
+      "symbol":"BTC",
+      "hash":"76cf32f8f358396366963df0cc84472669c3ad3e97406c29e0678a2bada273bb",
+      "address":"16R2WxkqKmwJmqXqXo6wWFFTvnTNc1ACBa",
+      "amount":"0.02261221",
+      "fees":0.0005,
+      "total":0.02211221,
+      "status":"DONE",
+      "timestamp":1535213242.986,
+      "available_at":1535214086.0
+   },
+   ...
+]
+```
+
+### Listar Retirada pela Hash
+```
+GET /v1/withdraw/btc/76cf32f8f358396366963df0cc84472669c3ad3e97406c29e0678a2bada273bb/
+```
+
+#### Response:
+```
+{  
+   "symbol":"BTC",
+   "hash":"76cf32f8f358396366963df0cc84472669c3ad3e97406c29e0678a2bada273bb",
+   "address":"16R2WxkqKmwJmqXqXo6wWFFTvnTNc1ACBa",
+   "amount":"0.02261221",
+   "fees":0.0005,
+   "total":0.02211221,
+   "status":"DONE",
+   "timestamp":1535213242.986,
+   "available_at":1535214086.0
+}
+```
+
+
+
 ## Livro de Ofertas
 ### Criar Ordem
 
