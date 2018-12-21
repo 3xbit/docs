@@ -78,6 +78,7 @@ GET /v1/balance/
       "blocked_balance": "0.000000000",
       "pending_balance": "0.000000000",
    },
+   ...
 ]
 
 ```
@@ -101,7 +102,7 @@ GET /v1/balance/btc/
       "total_balance": "0.025002560",
       "blocked_balance": "0.000000000",
       "pending_balance": "0.000000000",
-   },
+   }
 ]
 ```
 

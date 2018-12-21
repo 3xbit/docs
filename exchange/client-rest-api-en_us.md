@@ -78,6 +78,7 @@ GET /v1/balance/
       "blocked_balance": "0.000000000",
       "pending_balance": "0.000000000",
    },
+   ...
 ]
 
 ```
@@ -101,7 +102,7 @@ GET /v1/balance/btc/
       "total_balance": "0.025002560",
       "blocked_balance": "0.000000000",
       "pending_balance": "0.000000000",
-   },
+   }
 ]
 ```
 
@@ -110,7 +111,7 @@ GET /v1/balance/btc/
 ```
 GET /v1/deposit/btc/
 ```
-#### Parâmetros:
+#### Parameters:
 |  Parameter    | Type   | Required |
 |:--------------|:-------|:------------|
 |      status   |STRING  |  NO        |
@@ -174,7 +175,7 @@ GET /v1/deposit/btc/69ce21f92d346b58092a2c942a4533becd4f81ed923c3e31b6ee1509e980
 ```
 GET /v1/withdraw/btc/
 ```
-#### Parâmetros:
+#### Parameters:
 |  Parameter    | Type   | Required |
 |:--------------|:-------|:------------|
 |      status   |STRING  |  NO        |
