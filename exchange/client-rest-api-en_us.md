@@ -9,6 +9,7 @@
 * All time and timestamp related fields are in milliseconds.
 * HTTP `429` return code is used when breaking the request rate limit `1/second`.
 
+
 ## Authentication
 
 Authentication must be performed by API Keys.

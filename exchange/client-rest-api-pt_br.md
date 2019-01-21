@@ -9,6 +9,7 @@
 * Todos os campos relacionados a data e hora estão em milissegundos.
 * O código de retorno HTTP `429` é usado ao quebrar o limite da taxa de request `1/second`.
 
+
 ## Autenticação
 
 A autenticação deve ser feita por Chaves de API.
