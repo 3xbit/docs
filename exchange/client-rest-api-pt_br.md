@@ -7,6 +7,7 @@
 * Para endpoints `GET`, os parâmetros devem ser enviados por `query string`.
 * Para endpoints `POST`, os parâmetros devem ser enviados por `data` ou no corpo da requisição com `application/x-www-form-urlencoded` no `content-type`.
 * Todos os campos relacionados a data e hora estão em milissegundos.
+* O código de retorno HTTP `429` é usado ao quebrar o limite da taxa de request `1/second`.
 
 ## Autenticação
 
