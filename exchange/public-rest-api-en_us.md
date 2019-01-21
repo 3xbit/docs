@@ -7,7 +7,7 @@
 * For `GET` endpoints, parameters must be sent as a `query string`.
 * For `POST` endpoints, parameters must be sent as a `data` or in the request body with `application/x-www-form-urlencoded` in the `content-type`.
 * All time and timestamp related fields are in milliseconds.
-* HTTP `429` return code is used when breaking the request rate limit `1/second`.
+* HTTP `429` return code is used when breaking the request rate limit `1/3 seconds`.
 
 
 ## Ticker
