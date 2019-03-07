@@ -32,6 +32,9 @@ POST /token/
 
 O Token expira a cada 5 dias e pode ser renovado da seguinte forma:
 
+```
+POST /token/refresh/
+```
 
 #### Parâmetros:
 |  Parâmetro  | Tipo | Obrigatório |  Exemplo  |
