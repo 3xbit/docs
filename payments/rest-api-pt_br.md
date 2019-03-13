@@ -145,10 +145,12 @@ POST /v1/client/{client_id}/wallet/{currency}/
 |   email   |STRING  |  Sim        |
 
 #### Response:
+```
 {  
    "address":"Btki8R4uD2bUvQmCv2BG2pETospt2LxBTK",
    "currency":"BTC"
 }
+```
 
 ## Depósitos
 ### Listar Depósitos do Cliente
