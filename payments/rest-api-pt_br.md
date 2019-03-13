@@ -3,6 +3,7 @@
 
 ## Informações Gerais da API
 * Endpoint base: https://api.pay.3xbit.com.br
+* Fluxograma: [fluxograma.jpg](https://github.com/3xbit/docs/blob/master/payments/fluxograma.jpg)
 * Todos os endpoints retornam um objeto JSON ou um Array.
 * Para endpoints `GET`, os parâmetros devem ser enviados por `query string`.
 * Para endpoints `POST`, os parâmetros devem ser enviados por `data` ou no corpo da requisição com `application/x-www-form-urlencoded` no `content-type`.
@@ -152,12 +153,8 @@ POST /v1/client/{client_id}/wallet/{currency}/
 ## Depósitos
 ### Listar Depósitos do Cliente
 ```
-GET /v1/deposit/btc/
+GET /v1/client/{client_id}/deposit/btc/
 ```
-#### Parâmetros:
-|  Parâmetro    | Tipo   | Obrigatório |
-|:--------------|:-------|:------------|
-|   client_id   |STRING  |  Sim        |
 
 
 #### Response:
@@ -191,12 +188,9 @@ GET /v1/deposit/btc/
 
 ### Listar Depósito pela Hash
 ```
-GET /v1/deposit/btc/69ce21f92d346b58092a2c942a4533becd4f81ed923c3e31b6ee1509e980828c/
+GET /v1/client/{client_id}/deposit/btc/69ce21f92d346b58092a2c942a4533becd4f81ed923c3e31b6ee1509e980828c/
 ```
-#### Parâmetros:
-|  Parâmetro    | Tipo   | Obrigatório |
-|:--------------|:-------|:------------|
-|   client_id   |STRING  |  Sim        |
+
 
 #### Response:
 ```
@@ -212,5 +206,6 @@ GET /v1/deposit/btc/69ce21f92d346b58092a2c942a4533becd4f81ed923c3e31b6ee1509e980
    "available_at":1527272141.0
 }
 ```
+
 
 
