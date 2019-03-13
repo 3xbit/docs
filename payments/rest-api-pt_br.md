@@ -3,10 +3,13 @@
 
 ## Informações Gerais da API
 * Endpoint base: https://api.pay.3xbit.com.br
-* Fluxograma: [fluxograma.jpg](https://github.com/3xbit/docs/blob/master/payments/fluxograma.jpg)
 * Todos os endpoints retornam um objeto JSON ou um Array.
 * Para endpoints `GET`, os parâmetros devem ser enviados por `query string`.
 * Para endpoints `POST`, os parâmetros devem ser enviados por `data` ou no corpo da requisição com `application/x-www-form-urlencoded` no `content-type`.
+
+
+## Fluxograma
+![fluxograma.jpg](https://github.com/3xbit/docs/blob/master/payments/fluxograma.jpg)
 
 
 ## Autenticação
